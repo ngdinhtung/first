@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME PAGE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            ul {
+                list-style-image: url(img/check.png);
+            }
+
+            table {
+                border-collapse: collapse;
+                clear: left;
+            }
+
+            table.main tr:first-child { 
+                background-color: blue;
+            }
+
+            table.main tr:last-child { 
+                background-color: red;
+                color: gold;
+            }
+
+            table.main tr:nth-child(even) { 
+                color: green;
+                font-weight: bold;
+            }
+
+            table.main tr:nth-child(odd) { 
+                color: violet;
+                font-weight: bold;
+            }
+
+            table.main tr:hover { 
+                background-color: lightblue;
+                color: orange;
+            }
+
+            a:link {
+                color: brown;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: blue;
+                text-decoration: underline;
+            }
+
+            a:visited {
+                color: black;
+            }
+
+            a:active {
+                color: pink;
+            }
+
+            div.demo {
+                background-color: gray;
+                width: 300px;
+                height: 150px;
+                overflow: auto;
+                float: left;
+            }
+
+            div.main {
+                background-color: blue;
+            }
+
+            a.go {
+                text-decoration: none;
+                background-color: rgb(123, 45, 100, 0.6);
+                padding: 10px;
+                position: fixed;
+                right: 20px;
+                bottom: 20px;
+            }
+
+            div.products {
+                display: flex;
+                width: 400px;
+                height: 400px;
+                background-color: blue;
+                flex-wrap: wrap;
+                flex-direction: column;
+                transform: scale(0.4);
+                transition: background-color ease-in-out 2s;
+            }
+            
+            div.products:hover {
+                background-color: red;
+                }
+            div.product {
+                width: 100px;
+                height: 100px;
+                border: 2px dashed blue;
+            }
+
+            h1.subject {
+                animation: doimau ease-in 1s infinite;
+            }
+
+            @keyframes doimau {
+                from {
+                    background-color: red;
+                }
+                to {
+                    background-color: blue;
+                }
+            }
+
+            body {
+                background-color: lightgoldenrodyellow;
+            }
+
+            @media screen and (max-width:800px) {
+                body {
+                    background-color: red;
+                }
+            }
+
+            @media screen and (max-width:500px) {
+                body {
+                    background-color: lightblue;
+                }
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <h1 class="subject">HELLO WORLD</h1>
+        <div class="products">
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+        </div>
+        <a class="go" href="#test">GO TO TOP</a>
+        <div id="test" class="main">
+
+        <div class="demo">
+            Tổng số ca Covid-19 tại TP HCM từ ngày 27/4 đến nay lên 1.197 ca, xếp thứ ba cả nước trong đợt dịch này.
+
+Theo Trung tâm Kiểm soát Bệnh tật TP HCM (HCDC), 137 trường hợp nhiễm mới bao gồm 26 trường hợp liên quan đến điểm nhóm Truyền giáo Phục hưng đã được cách ly từ trước, 104 ca tiếp xúc với các bệnh nhân đã được cách ly hoặc trong khu vực phong tỏa, 7 ca phát hiện qua khám sàng lọc đang điều tra dịch tễ.
+        </div>
+        
+        <h1><a href="https://fb.com">Facebook</a></h1>
+        </div>
+        <br>
+        <h1>TEST</h1>
+        <h1>TEST</h1>
+        <h1>TEST</h1>
+        <h1>TEST</h1>
+        <h1>TEST</h1>
+        <h1>TEST</h1>
+        <h1>TEST</h1>
+        <h1>TEST</h1>
+        <table border="1" width="50%" class="main">
+            <tr>
+                <td>TEST 1</td>
+                <td>TEST 2</td>
+                <td>TEST 3</td>
+                <td>TEST 4</td>
+                <td>TEST 5</td>
+            </tr>
+            <tr>
+                <td>TEST 1</td>
+                <td>TEST 2</td>
+                <td>TEST 3</td>
+                <td>TEST 4</td>
+                <td>TEST 5</td>
+            </tr>
+            <tr>
+                <td>TEST 1</td>
+                <td>TEST 2</td>
+                <td>TEST 3</td>
+                <td>TEST 4</td>
+                <td>TEST 5</td>
+            </tr>
+            <tr>
+                <td>TEST 1</td>
+                <td>TEST 2</td>
+                <td>TEST 3</td>
+                <td>TEST 4</td>
+                <td>TEST 5</td>
+            </tr>
+            <tr>
+                <td>TEST 1</td>
+                <td>TEST 2</td>
+                <td>TEST 3</td>
+                <td>TEST 4</td>
+                <td>TEST 5</td>
+            </tr>
+        </table>
+        <ul>
+            <li>TEST 1</li>
+            <li>TEST 2</li>
+            <li>TEST 3</li>
+            <li>TEST 4</li>
+        </ul>
+    </body>
+</html>

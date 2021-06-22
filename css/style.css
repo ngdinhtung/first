@@ -1,0 +1,28 @@
+body {
+    /* background-image: url(../img/happy.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70% 300px; */
+    background: url(../img/happy.png) no-repeat fixed 70% 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+
+td {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.test > span {
+    font-variant: small-caps;
+}
+
+a {
+    text-decoration: none;
+}

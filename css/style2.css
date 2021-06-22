@@ -1,0 +1,177 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+section.nav {
+    background-color: cadetblue;
+}
+
+section.nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+section.nav > ul > li {
+    border-right: 1px solid white;
+    min-width: 120px;
+    text-align: center;
+}
+
+section.nav > ul > li > a{
+    text-decoration: none;
+    display: block;
+    padding: 15px 8px;
+}
+
+section.nav > ul > li > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+ul.left > li:last-child {
+    border-right: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+section.banner {
+    background: linear-gradient(darkblue, blue);
+    display: flex;
+    margin-top: 5px;
+    
+}
+
+section.banner > h1 {
+    color: white ;
+    font-size: 36px;
+    text-shadow: 2px 3px 2px antiquewhite;
+    position: relative;
+    left: 20%;
+    animation: doimau 1s infinite;
+}
+
+@keyframes doimau {
+    from {
+        color: white;
+    }
+    to {
+        color: gold;
+    }
+}
+
+section.content {
+    
+    width: 70%;
+    margin: 5px auto;
+}
+
+div.posts {
+    background-color: lightblue;
+}
+
+div.subject > h1 {
+    color: white;
+    background-color: darkblue;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+}
+
+div.post {
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.col1 {
+    width: 10%;
+}
+.col2 {
+    width: 40%;
+}
+.col3 {
+    width: 20%;
+}
+.col4 {
+    width: 30%;
+    direction: rtl;
+}
+
+.col {
+    padding: 10px;
+}
+
+.col > img {
+    width: 100%;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform ease-in-out .5s;
+}
+
+.col img:hover {
+    transform: skew(-20deg);
+}
+ul, p {
+    margin: 0;
+    list-style-type: none;
+}
+
+section.ads > div {
+    position: fixed;
+    background: linear-gradient(darkblue, lightblue);
+    padding: 120px 30px;
+    border-radius: 10px;
+}
+
+div.ads-left {
+    left: 9px;
+}
+
+div.ads-right {
+    right: 9px;
+}
+
+section.footer {
+    background-image: url(../img/bg-img1.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #f1c534;
+    padding: 15px;
+}
+
+.tooltipcontent {
+    background-color: brown;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    width: 200px;
+    margin-left: -100px;
+}
+
+.tooltipcontent::after {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent brown transparent;
+    position: absolute;
+    top: -20px;
+    right: 10%;
+}
+
+.tooltip:hover .tooltipcontent {
+    display: block;
+}
